@@ -43,37 +43,39 @@ public class Main {
         }
         //Домашнее задание - 2. Задание 1.
         System.out.println("Домашнее задание - 2.Задание 1");
-        int newAge = 18;
-        if (newAge >= 18) {
+        System.out.println("Задание 1");
+        int age = 24;
+        if (age >= 18) {
             System.out.println("Поздравляем с совершеннолетием");
         } else {
             System.out.println("Возраст совершеннолетия ещё не наступил, и нужно немного подождать.");
         }
+
         // Задание 2.
         System.out.println("Задание 2");
-        if (newAge >= 7 && newAge < 18) {
+        if (age >= 7 && age < 18) {
             System.out.println("Ребенок ходит в школу");
-        } else if (newAge >= 18 && newAge < 24) {
+        } else if (age >= 18 && age < 24) {
             System.out.println("Человек закончил школу и может отправляться в университет");
-        } else if (newAge > 24) {
+        } else if (age > 24) {
             System.out.println("Человек окончил университет, пора искать первую работу");
         }
         // Задание 3.
-        int allCapacityWagon = 102;
-        int allSeatingPlaces = 60;
-        int allStandingPlaces = capacityWagon - seatingPlaces;
+        int capacityWagon = 102;
+        int seatingPlaces = 60;
+        int standingPlaces = capacityWagon - seatingPlaces;
 
-        int allFreeSeatingPlaces = 23;
-        int allFreeStandingPlaces = 100;
+        int freeSeatingPlaces = 23;
+        int freeStandingPlaces = 100;
 
-        if (allFreeSeatingPlaces < allSeatingPlaces) {
-            System.out.println("Ёще есть свободных " + (allSeatingPlaces - allFreeSeatingPlaces) + " сидячих мест");
+        if (freeSeatingPlaces < seatingPlaces) {
+            System.out.println("Ёще есть свободных " + (seatingPlaces - freeSeatingPlaces) + " сидячих мест");
         }
-        if (allFreeSeatingPlaces == allSeatingPlaces) {
+        if (freeSeatingPlaces == seatingPlaces) {
             System.out.println("Сидячих мест нет");
         }
-        if (allFreeStandingPlaces < allStandingPlaces) {
-            System.out.println("Есть ещё стоячих " + (allStandingPlaces - allFreeStandingPlaces) + " мест");
+        if (freeStandingPlaces < standingPlaces) {
+            System.out.println("Есть ещё стоячих " + (standingPlaces - freeStandingPlaces) + " мест");
 
         } else {
             System.out.println("Стоячих мест нет");
